@@ -35,6 +35,7 @@ Da vil nettsiden åpnes i en localhost i nettleseren din.
 _Alternativ 2_
 
 Du kan besøke nettsiden på http://it2810-20.idi.ntnu.no/project2
+(Kun hvis du er koblet til NTNU sin VPN)
 
 **Backend**  
 Vi har deployet backenden på vm og bruker denne lokalt også.
