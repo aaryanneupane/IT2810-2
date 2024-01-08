@@ -1,0 +1,162 @@
+.filter-bar-dark {
+  background-color: #1c1c1c;
+  padding: 2vw;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.filter-bar-light {
+  background-color: #ffffff;
+  padding: 2vw;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 0px;
+}
+
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  border: 0px;
+}
+
+.filter-bar-dark label {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  font-family: "Roboto", sans-serif;
+  align-self: stretch;
+  margin-top: 4vh;
+}
+
+.filter-bar-light label {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  font-family: "Roboto", sans-serif;
+  align-self: stretch;
+  margin-top: 4vh;
+}
+
+.filter-bar-dark select,
+.filter-bar-dark input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  appearance: none;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  color: white;
+}
+.filter-bar-light select,
+.filter-bar-light input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  appearance: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.filter-bar-dark button {
+  background-color: #1c1c1c;
+  color: white;
+  height: 7vh;
+  width: 10vw;
+  border: 0.5vw solid rgb(71, 69, 69);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2vw;
+  background: transparent;
+  margin-left: 1vw;
+  margin-top: 1%;
+  padding: 0;
+  border-radius: 3vw;
+  transition:
+    background-color 0.5s,
+    color 0.5s,
+    transform 0.5s;
+}
+.filter-bar-light button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  height: 7vh;
+  width: 10vw;
+  border: 0.5vw solid rgb(71, 69, 69);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2vw;
+  background: transparent;
+  margin-left: 1vw;
+  margin-top: 1%;
+  padding: 0;
+  border-radius: 3vw;
+  transition:
+    background-color 0.5s,
+    color 0.5s,
+    transform 0.5s;
+}
+
+.filter-bar-dark button:hover {
+  background-color: rgb(71, 69, 69);
+  color: #1c1c1c;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.filter-bar-light button:hover {
+  background-color: rgb(71, 69, 69);
+  color: #ffffff;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.filter-bar button {
+  align-self: center;
+}
+
+.active {
+  background-color: rgb(104, 103, 103) !important;
+  color: #1c1c1c !important;
+}
+
+.clear-btn {
+  margin-top: 3vw !important;
+}
+
+@media (max-width: 650px) {
+  .input-fields {
+    flex-direction: column;
+  }
+
+  .filter-bar label {
+    margin: 10px 0;
+  }
+
+  .filter-bar button {
+    font-size: 0.7rem;
+    width: 100%;
+  }
+
+  .genres button {
+    min-width: 50px;
+    width: auto;
+    font-size: 2.5vw;
+  }
+}

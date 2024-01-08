@@ -1,0 +1,35 @@
+:root {
+  --color-background-light: #ffffff;
+  --color-background-dark: #1c1c1c;
+  --color-foreground-light: #1c1c1c;
+  --color-foreground-dark: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body.light-mode {
+  background-color: var(--color-background-light);
+  color: var(--color-foreground-light);
+}
+
+body.dark-mode {
+  background-color: var(--color-background-dark);
+  color: var(--color-foreground-dark);
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: skyblue;
+  text-decoration: underline;
+}

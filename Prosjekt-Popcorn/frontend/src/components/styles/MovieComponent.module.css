@@ -1,0 +1,126 @@
+.movieList {
+  list-style-type: none;
+  padding-left: 20px;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  z-index: 1;
+  position: relative;
+}
+
+.movieList::-webkit-scrollbar {
+  height: 10px;
+}
+
+.movieList::-webkit-scrollbar-thumb-dark {
+  background-color: #1c1c1c;
+  border-radius: 6px;
+}
+
+.movieList::-webkit-scrollbar-track-dark {
+  background-color: #1c1c1c;
+  border-radius: 6px;
+}
+
+.movieList::-webkit-scrollbar-thumb-light {
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+.movieList::-webkit-scrollbar-track-light {
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+.movieList li {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+}
+
+.movieCover {
+  width: 150px;
+  height: 225px;
+  border-radius: 10px;
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+}
+
+.movieCover:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 25px 50px -12px rgb(0 0 0 / 0.25),
+    0 10px 30px -15px rgb(0 0 0 / 0.3);
+  opacity: 0.6;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #bbcbd19e;
+  cursor: pointer;
+}
+.movieList li:hover .overlay {
+  opacity: 1;
+}
+
+.scrollContainer {
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.scrollContainer:hover .scrollButton {
+  opacity: 1;
+}
+
+.scrollButton {
+  position: absolute;
+  height: 90%;
+  width: 40px;
+  top: 10%;
+  background-color: #1c1c1c00;
+  color: #d1d1d1;
+  font-size: 60px;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+@media screen and (max-width: 400px) {
+  /* på mobilskjerm vises knappene hele tiden*/
+  .scrollButton {
+    opacity: 1;
+  }
+}
+
+.scrollButton:hover {
+  font-size: 75px;
+}
+
+.scrollLeft {
+  margin-left: 1vw;
+  left: 0;
+  border-top-right-radius: 90px;
+  border-bottom-right-radius: 90px;
+}
+
+.scrollRight {
+  margin-right: 1vw;
+  right: 0;
+  border-top-left-radius: 90px;
+  border-bottom-left-radius: 90px;
+}

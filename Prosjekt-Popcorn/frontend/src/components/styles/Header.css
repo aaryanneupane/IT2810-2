@@ -1,0 +1,159 @@
+.header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  height: 10vw;
+  min-height: 100px;
+  z-index: 1000;
+}
+
+.header-dark {
+  background-color: #1c1c1c;
+}
+.header-light {
+  background-color: #ffffff;
+}
+
+.logo {
+  height: 10vw;
+  width: 10vw;
+  min-width: 80px;
+  min-height: 80px;
+  margin-left: 2vw;
+  padding-top: 1vw;
+  float: left;
+  cursor: pointer;
+}
+
+.headerBu {
+  cursor: pointer;
+  width: 11vw;
+  height: 5vw;
+  min-width: 100px;
+  min-height: 50px;
+  position: relative;
+  padding-top: 6vw;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5vw;
+  font-size: calc(12px + 0.5vw);
+  background: transparent;
+}
+.headerBu-dark {
+  background-color: #1c1c1c;
+  color: rgb(255, 255, 255);
+}
+
+.headerBu-light {
+  background-color: #ffffff;
+  color: rgb(21, 20, 20);
+}
+
+@media only screen and (max-width: 615px) {
+  .headerBu {
+    display: none;
+  }
+}
+.scrollDownMenu {
+  position: relative;
+  display: inline-block;
+}
+.scrollDownMenu-content-dark {
+  display: none;
+  background-color: #f8f5f5;
+  border-radius: 10px;
+  border: 0.1px solid rgb(24, 23, 23);
+  position: absolute;
+  top: 6.5vw;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.scrollDownMenu-content-light {
+  display: none;
+  background-color: #0e0d0d;
+  border-radius: 10px;
+  border: 0.1px solid rgb(182, 182, 182);
+  position: absolute;
+}
+
+.scrollDownMenu-content::-webkit-scrollbar {
+  width: 1vw;
+}
+
+.scrollDownMenu-content::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Style for the scrollbar thumb (the draggable part) */
+.scrollDownMenu-content::-webkit-scrollbar-thumb {
+  background-color: #dedcdc;
+  border-radius: 4px;
+}
+
+/* Links inside the dropdown */
+.scrollDownMenu-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.scrollDownMenu-content a:hover {
+  background-color: #fbfbfb61;
+  border-radius: 10px;
+}
+
+.scrollDownMenu:hover .scrollDownMenu-content {
+  display: block;
+}
+
+.btn-darkmode {
+  border-radius: 30px;
+}
+.dropdown {
+  position: relative;
+  padding-top: 6vw;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.dropdown-content-dark {
+  background-color: #1c1c1c;
+  color: white;
+  display: none;
+  position: absolute;
+  width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  font-family: "Roboto", sans-serif;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.dropdown-content-light {
+  background-color: #ffffff;
+  color: #1c1c1c;
+  display: none;
+  position: absolute;
+  width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  font-family: "Roboto", sans-serif;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media only screen and (min-width: 616px) {
+  .dropdown {
+    display: none;
+  }
+}

@@ -1,0 +1,36 @@
+.button-container {
+  /* Container for the page-buttons */
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-dark {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  background-color: rgb(66, 66, 66) !important;
+}
+.pagination-light {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  background-color: rgb(208, 203, 203) !important;
+}
+
+.pagination-dark button {
+  color: rgb(255, 255, 255) !important;
+}
+
+.pagination-light button {
+  color: rgb(0, 0, 0) !important;
+}
+
+.discover-title {
+  display: flex;
+  justify-content: center;
+  font:
+    3vw "Roboto",
+    sans-serif;
+}

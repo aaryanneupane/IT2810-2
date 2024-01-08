@@ -1,0 +1,52 @@
+.movieCover {
+  width: 150px;
+  height: 225px;
+  border-radius: 10px;
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+}
+
+.movieCover:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 25px 50px -12px rgb(0 0 0 / 0.25),
+    0 10px 30px -15px rgb(0 0 0 / 0.3);
+  opacity: 0.6;
+}
+
+.moviesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Spacing between items */
+  margin-bottom: 3rem;
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
+.loadButton {
+  height: 2.5rem;
+  cursor: pointer;
+  transition: 0.25s;
+  padding: 13px 24px 15px 24px;
+  margin-bottom: 3rem;
+}
+.loadButton:hover {
+  border-radius: 10rem;
+  background-color: rgb(60, 60, 60, 0.7);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.7);
+  transform: translateY(-5px);
+}
+.loadbutton:focus,
+button:focus-visible {
+  outline: 8px auto -webkit-focus-ring-color;
+}
+
+h1 {
+  margin-bottom: 3rem;
+  text-align: center;
+}

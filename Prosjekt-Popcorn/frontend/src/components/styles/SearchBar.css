@@ -1,0 +1,204 @@
+.search-box {
+  display: flex;
+  position: relative;
+  float: right;
+  padding-right: 4vw;
+  padding-top: 4vw;
+}
+
+.input-search {
+  height: 2vw;
+  width: 15vw;
+  border: none;
+  font-size: 1.5vw;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  background-color: #1c1c1c;
+  color: #181717;
+  margin-right: 10px;
+}
+
+.input-search-dark::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 100;
+}
+
+.input-search-light::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 100;
+}
+
+.input-search-light {
+  height: 2vw;
+  width: 15vw;
+  border-style: none;
+  font-size: 1.5vw;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0s ease-in-out;
+  background-color: #ffffff;
+  color: #191919;
+}
+.input-search-dark {
+  height: 2vw;
+  width: 15vw;
+  border-style: none;
+  font-size: 1.5vw;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0s ease-in-out;
+  background-color: #1c1c1c;
+
+  color: #ffffff;
+}
+
+.input-search-darkmode::placeholder {
+  color: #ffff;
+  font-size: 1.5vw;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.input-search-lightmode::placeholder {
+  color: #1c1c1c;
+  font-size: 1.5vw;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.btn-search {
+  width: 2em;
+  height: 2em;
+  border: none;
+  font-size: 1.5em;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  padding-top: 1.6em;
+  color: #ffffff;
+  background-color: transparent;
+  display: inline-block;
+}
+
+.btn-search-dark {
+  width: 2vw;
+  height: 2vw;
+  padding-top: 0.4vw;
+  border-style: none;
+  font-size: 1.5vw;
+  font-weight: bold;
+  input-search::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 100;
+  }
+}
+
+.btn-search {
+  width: 2vw;
+  height: 2vw;
+  border: none;
+  font-size: 1.5vw;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  padding-top: 0.5vw;
+  right: 2vw;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+
+.btn-search-light {
+  width: 2vw;
+  height: 2vw;
+  border-style: none;
+  font-size: 1.5vw;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  padding-top: 0.4vw;
+  color: #000000;
+  background-color: transparent;
+  display: inline-block;
+}
+
+.btn-search:focus ~ .input-search {
+  width: 15vw;
+}
+
+.input-search:focus {
+  width: 15vw;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.dark-mode-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 615px) {
+  .search-box {
+    margin-top: 2vw;
+  }
+  .btn-search-dark {
+    font-size: 4vw;
+    height: 4vw;
+  }
+  .btn-search-light {
+    font-size: 4vw;
+    height: 4vw;
+  }
+  .input-search {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    height: 6vw;
+    width: 30vw;
+  }
+  .input-search-dark::placeholder {
+    height: 20vw;
+    font-size: 2vw;
+    margin-left: 10px;
+    width: 30vw;
+  }
+
+  .input-search-light::placeholder {
+    height: 20vw;
+    font-size: 2vw;
+    margin-left: 10px;
+    width: 30vw;
+  }
+  .input-search-light {
+    font-size: 3vw;
+    width: 30vw;
+  }
+  .input-search-dark {
+    font-size: 3vw;
+  }
+  .input-search-darkmode::placeholder {
+    font-size: 3vw;
+    width: 30vw;
+  }
+
+  .input-search-lightmode::placeholder {
+    font-size: 3vw;
+    width: 30vw;
+  }
+  .btn-search:focus ~ .input-search {
+    width: 30vw;
+  }
+
+  .input-search:focus {
+    width: 30vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
